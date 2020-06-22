@@ -1,38 +1,201 @@
-.App {
+body {
+  background-color: rgba(156, 60, 16, 0.75);
+  align-items: center;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+.container{
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.Nav{
+  display: block;
+  margin: 0;
+  padding-bottom:0px;
+  overflow: hidden;
+  background-color: rgb(235, 180, 28);
+}
+h2:hover {
+  color: rgb(255, 196, 0);
+}
+
+
+.balance{
+  border-radius: 5px;
+
+  display: flex;
+  background-color: lightslategray;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.6s;
+  margin: auto;
+}
+ .balance:hover {
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(255, 196, 0);
+}
+
+.inc-exp-container{
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 40px;
+  transition: 0.6s;
+
+}
+.inc-exp-container:hover {
+  box-shadow: 0 116px 116px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(255, 196, 0);
+}
+.inc-exp-container > div {
+  flex: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.money.plus {
+  color: #2ecc71;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.money.minus {
+  color: #c0392b;
+}
+
+
+
+.history{
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: lightslategray;
+  box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  max-width:500px;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+  .form-style-4{
+   
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+    padding-top: 90px;
+    width: 35%;
+  height: 550px;
+  float: left;
+  color:white;
+  }
+  .form-style-4 input[type=submit],
+  .form-style-4 input[type=button],
+  .form-style-4 input[type=text],
+  .form-style-4 input[type=email],
+  .form-style-4 textarea,
+  .form-style-4 label
+  {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+  
+  }
+  .form-style-4 label {
+    display:block;
+    margin-bottom: 10px;
+  }
+  .form-style-4 label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+  }
+  .form-style-4 input,
+  .form-style-4 input[type=email] 
+  {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+  }
+  .form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+  }
+  
+  .form-style-4 textarea:focus, 
+  .form-style-4 input[type=text]:focus
+  {
+    border-bottom: 1px dashed #D9FFA9;
+  }
+  
+  .form-style-4 input[type=submit]{
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+  }
+  .form-style-4 input[type=submit]:hover,
+  .form-style-4 input[type=button]:hover{
+  background: #394D61;
+  }
+  .formmy{
+    width: 700px;
+  }
+ 
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+    border-radius: 25px;
+  }
+
+ 
+  .list li {
+     border-radius: 25px;
+    display: flex;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  width: 475px;
+  transition: 0.3s;
+
+}
+.list li.plus {
+  background-color:  #2ecc71;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list li.minus {
+  background-color:  #bd270d;
+}
+
+
+ .list li:hover {
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(255, 196, 0);
 }
