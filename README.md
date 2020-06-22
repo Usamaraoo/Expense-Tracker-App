@@ -1,4 +1,4 @@
-This project was bootstrapped with [Expense-Tracker App link](hanging-answer.surge.sh).
+Open app[Expense-Tracker App link](hanging-answer.surge.sh).
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
